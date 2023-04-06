@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+:root{
+    --card_width: 250px;
+    --card_border_rad: 16px;
+    --row_increment: 10px;
+
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+nav{
+    height: 80px;
+    background-color: white;
+    display: flex;
+}
+
+.navbar_pinterest_container{
+width: 256px;
+background-color: black;
+}
+
+
+.container{
+padding: 0;
+margin: 0;
+width: 100%;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+
+display: grid;
+grid-template-columns: repeat(auto-fill, var(--card_width));
+grid-auto-rows: var(--row_increment);
+justify-content: center;
+background-color: white;
+}
+
+.card{
+    position: relative;
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_rad);
+background-color: red;
+}
+
+.card_small{
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium{
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large{
+    grid-row-end: span var(--card_large);
+}
+
+.card_content{
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    border-radius: var(--card_border_rad);
+}
+
+
+.card_button_hover{
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    transition: opacity 0.5 ease-in-out;
+    border-radius: var(--card_border_rad);
+}
+.card_button_hover:hover{
+    opacity: 1.5;
+}
+
