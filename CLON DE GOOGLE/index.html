@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página clon del buscador de Google">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap')">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-right--section">
+                <li>
+                    <a href="https://mail.google.com/mail/?tab=rm&ogbl">Gmail</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com.mx/imghp?hl=es&tab=ri&ogbl">Imágenes</a>
+                </li>
+                <a href="#">
+                    <li class="menu-icon">
+                    </li>
+                </a>
+                <li>
+                    <a href="https://myaccount.google.com/?utm_source=OGB&tab=rk&utm_medium=act&pli=1"><img
+                            src="https://lh3.googleusercontent.com/ogw/ADGmqu_Mk3m1VQZZ3DKKMuSS2nRCcQsj2iSUdBH7L3jU=s32-c-mo"
+                            alt="Profile picture"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-logo">
+            <picture>
+                <img src="./assets/imgs/google_logo.svg" alt="Google logo">
+            </picture>
+        </section>
+        <section class="main-input">
+            <div class="main-input--container">
+                <span class="search-icon"></span>
+                <input type="text">
+                <a class="voice-icon" href="#"></a>
+            </div>
+        </section>
+        <section class="main-buttons">
+            <div>
+                <button>Buscar con Google</button>
+            </div>
+            <div>
+                <button>Me siento con suerte</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer-left">
+            <li><a
+                    href="https://www.google.com/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+            </li>
+            <li><a
+                    href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+            </li>
+            <li><a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre
+                    Google</a></li>
+            <li><a href="https://google.com/search/howsearchworks/?fg=1">Como funciona la búsqueda</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+            <li><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>
+            <li><a href="https://www.google.com/preferences?hl=es-419">Preferencias</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+
+<!--Diferencias entre las ramas de clon de google-->
+<!--
+    1.Dentro de la clase "main input", él código de esta rama no tiene escrito la leyenda "buscar en googleo escribir una URL" como si lo tiene la 2° rama mediante un placeholder
+    2.En las clases "footer-left" y "footer-right" que los códigos de ambas ramas tienen, en ésta rama se especifican los diversos titulos de pie de página que aparecen cuando entras al navegador de google, con todo y enlaces, mientras que en la otra sólo tiene indicada la estructura.
+    3.La rama maestra , que es donde proviene éste código html, está conformado por 78 líneas de código mientras que en la segunda rama hallamos 73 líneas para clonar a google.
+    4.Dentro del código de la rama maestra, se encuentra insertado el logotipo de google en formato .svg, mientras que su homólogo de la otra rama no lo tiene
+    5.Dentro del style.css , en la rama master, las clases footer left y right no tienen como parte de sus propiedades el background-color; cosa que si se encuentra en la otra rama. 
+    6.la etiqueta footer en style.css , se puede encontrar una diferencia entre las 2 ramas, en la rama master se tiene definido el background-color y border-top con cólores Hex, mientras que en la otra, sólo se tiene el background-color con colores rgb.
+    7.Para la clase main-input--container, se observa que en styles.css de la rama layout, no se tiene contemplado el border radius, cosa que si se encuentra en el css de la rama master.  
+    8.En general, los elementos identificados en las etiquetas del index de la rama layout, no están referenciados con los titulos y enlaces que corresponden, para asemejarse a google
+    9.en el hover de main-input--container, dentro de la rama master, se obserca que contiene un border y border shadow, cosa que en su homologo de la rama layout no tiene.
+    10.Las propiedades de la clase "main-buttons", tiene un background color en el css de la rama layuout, mientras que en la rama master no se tiene esta propiedad.
+-->
